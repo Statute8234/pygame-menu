@@ -21,7 +21,7 @@ class BaseTest(_BaseTest):
         Test counter.
         """
         obj = Base('')
-        self.assertEqual(obj.get_counter_attribute('count', 1), 10)
+        self.assertEqual(obj.get_counter_attribute('count', 1), 1)
         self.assertEqual(obj.get_counter_attribute('count', 1), 2)
         self.assertEqual(obj.get_counter_attribute('count', 1), 3)
         self.assertEqual(obj.get_counter_attribute('count', 1), 4)
